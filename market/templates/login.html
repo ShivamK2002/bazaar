@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 {% block title %}
-    Register Page
+Register Page
 {% endblock %}
 
 {% block content %}
+
 <body class="text-center">
     <div class="container">
         <form method="POST" class="form-signin" style="color:white">
             {{ form.hidden_tag() }}
-            <img class="mb-4" src="https://res.cloudinary.com/jimshapedcoding/image/upload/v1597332609/android-icon-192x192_ove2a7.png" alt="">
-            <h1 class="h3 mb-3 font-weight-normal">
+            <h1 class="mt-5 h3 mb-3 font-weight-normal">
                 Please Login
             </h1>
             <br>
@@ -23,8 +23,9 @@
 
 
             <div class="checkbox mb-3">
-               <h6>Do not have an account?</h6>
-               <a class="btn btn-sm btn-secondary" href="{{ url_for('register_page') }}">Register</a>
+                <h6>Do not have an account?
+                    <a class="" href="{{ url_for('register_page') }}">Register</a>
+                </h6>
             </div>
 
             {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
