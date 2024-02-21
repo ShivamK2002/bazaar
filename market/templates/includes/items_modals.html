@@ -5,9 +5,8 @@
 </style>
 
 <!-- More Info -->
-<div class="modal fade" id="Modal-MoreInfo-{{ item.id }}"
-     tabindex="-1"
-     aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Modal-MoreInfo-{{ item.id }}" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -15,8 +14,7 @@
           <!-- -->
           {{ item.name }}
         </h5>
-        <button type="button" class="close"
-                data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -24,8 +22,7 @@
         {{ item.description }}
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary"
-                data-dismiss="modal">Close
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
         </button>
       </div>
     </div>
@@ -33,9 +30,8 @@
 </div>
 
 <!-- Purchase Confirm -->
-<div class="modal fade" id="Modal-PurchaseConfirm-{{ item.id }}"
-     tabindex="-1"
-     aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Modal-PurchaseConfirm-{{ item.id }}" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -43,8 +39,7 @@
           <!-- -->
           {{ item.name }}
         </h5>
-        <button type="button" class="close"
-                data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -52,7 +47,7 @@
         <form method="POST">
           {{ purchase_form.hidden_tag() }}
           <h4 class="text-center">
-            Are you sure you want to buy {{ item.name }} for {{ item.price }}$ ?
+            Are you sure you want to buy {{ item.name }} for {{ item.price }} rs ?
           </h4>
           <br>
           <h6 class="text-center">
@@ -64,8 +59,7 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary"
-                data-dismiss="modal">Close
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
         </button>
       </div>
     </div>
